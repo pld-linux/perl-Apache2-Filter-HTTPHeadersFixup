@@ -1,0 +1,11 @@
+--- Apache2-Filter-HTTPHeadersFixup-0.06/lib/Apache2/Filter/HTTPHeadersFixup.pm~	2005-07-04 01:37:28.000000000 +0200
++++ Apache2-Filter-HTTPHeadersFixup-0.06/lib/Apache2/Filter/HTTPHeadersFixup.pm	2006-07-31 22:31:58.960025000 +0200
+@@ -5,7 +5,7 @@
+ use strict;
+ use warnings FATAL => 'all';
+ 
+-use mod_perl 1.9917;
++use mod_perl2 1.9917;
+ 
+ use base qw(Apache2::Filter);
+ 
