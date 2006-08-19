@@ -2,12 +2,12 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%define	apxs	/usr/sbin/apxs
 %include	/usr/lib/rpm/macros.perl
+%define	apxs	/usr/sbin/apxs
 %define	pdir	Apache2
 %define	pnam	Filter-HTTPHeadersFixup
-Summary:	Apache2::Filter::HTTPHeadersFixup - Manipulate Apache 2 HTTP Headers
-#Summary(pl):	
+Summary:	Apache2::Filter::HTTPHeadersFixup - manipulate Apache 2 HTTP Headers
+Summary(pl):	Apache2::Filter::HTTPHeadersFixup - manipulowanie nag³ówkami HTTP Apache'a 2
 Name:		perl-Apache2-Filter-HTTPHeadersFixup
 Version:	0.06
 Release:	1
@@ -33,8 +33,11 @@ easy way to manipulate HTTP headers without invoking any mod_perl HTTP
 handlers. This is accomplished by using input and/or output connection
 filters.
 
-# %description -l pl
-# TODO
+%description -l pl
+Apache2::Filter::HTTPHeadersFixup to nadklasa udostêpniaj±ca ³atwy
+sposób manipulowania nag³ówkami HTTP bez wywo³ywania ¿adnej procedury
+obs³ugi HTTP mod_perla. Jest to wykonywane poprzez wej¶ciowe i/lub
+wyj¶ciowe filtry po³±czenia.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -60,5 +63,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes TODO
+%dir %{perl_vendorlib}/Apache2/Filter
 %{perl_vendorlib}/Apache2/Filter/*.pm
 %{_mandir}/man3/*
