@@ -7,7 +7,7 @@
 %define	pdir	Apache2
 %define	pnam	Filter-HTTPHeadersFixup
 Summary:	Apache2::Filter::HTTPHeadersFixup - manipulate Apache 2 HTTP Headers
-Summary(pl.UTF-8):   Apache2::Filter::HTTPHeadersFixup - manipulowanie nagłówkami HTTP Apache'a 2
+Summary(pl.UTF-8):	Apache2::Filter::HTTPHeadersFixup - manipulowanie nagłówkami HTTP Apache'a 2
 Name:		perl-Apache2-Filter-HTTPHeadersFixup
 Version:	0.06
 Release:	2
