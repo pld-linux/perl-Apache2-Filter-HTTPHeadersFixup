@@ -20,7 +20,7 @@ Patch0:		%{name}-mpver.patch
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	apache-apxs
+BuildRequires:	%{apxs}
 BuildRequires:	perl-Apache-Test >= 1.25
 BuildRequires:	perl-mod_perl >= 2.000001
 %endif
