@@ -10,7 +10,7 @@ Summary:	Apache2::Filter::HTTPHeadersFixup - manipulate Apache 2 HTTP Headers
 Summary(pl.UTF-8):	Apache2::Filter::HTTPHeadersFixup - manipulowanie nagłówkami HTTP Apache'a 2
 Name:		perl-Apache2-Filter-HTTPHeadersFixup
 Version:	0.06
-Release:	2
+Release:	3
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
