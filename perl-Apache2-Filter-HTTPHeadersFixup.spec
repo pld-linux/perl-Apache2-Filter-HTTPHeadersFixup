@@ -1,11 +1,11 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define	apxs	/usr/sbin/apxs
 %define	pdir	Apache2
 %define	pnam	Filter-HTTPHeadersFixup
+%include	/usr/lib/rpm/macros.perl
 Summary:	Apache2::Filter::HTTPHeadersFixup - manipulate Apache 2 HTTP Headers
 Summary(pl.UTF-8):	Apache2::Filter::HTTPHeadersFixup - manipulowanie nagłówkami HTTP Apache'a 2
 Name:		perl-Apache2-Filter-HTTPHeadersFixup
@@ -17,6 +17,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	253f4df9d395dbb4735c0708aa809968
 Patch0:		%{name}-mpver.patch
+URL:		http://search.cpan.org/dist/Apache2-Filter-HTTPHeadersFixup/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
